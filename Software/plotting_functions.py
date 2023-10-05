@@ -48,6 +48,10 @@ def plot_data_line(df, selected_offence_code=None):
         fig, ax = plt.subplots(figsize=(10, 5))
         ax.text(0.5, 0.5, "No data in the selected timeframe", ha='center', va='center', fontsize=12)
         ax.axis('off')  # Turn off axis
+        ax.set_label("EMPTY_PLOT")  # Added this label for testing
+        errorMessage = "Plot is empty"
+        return errorMessage
+
     else:
         # Sort dataframe by 'OFFENCE_MONTH' column in ascending order
         df = df.sort_values(by='OFFENCE_MONTH')
@@ -68,10 +72,7 @@ def plot_data_line(df, selected_offence_code=None):
         ax.legend()
         plt.tight_layout()  # Adjust subplot parameters to give specified padding
 
-    return fig
-
-
-
+        return fig
 
 def plot_data_pie(df):
     if len(df) == 0:
@@ -116,15 +117,15 @@ def plot_data_pie(df):
 
 def filter_by_top_10(df):
     # Grouping by offence_code and offence_desc and summing total_number
-    selected_df = df[['OFFENCE_CODE', 'OFFENCE_DESC', 'TOTAL_NUMBER']]
-    grouped_df = selected_df.groupby(['OFFENCE_CODE', 'OFFENCE_DESC']).sum().reset_index()
-
-    # Sorting the dataframe by TOTAL_NUMBER in descending order and selecting top 10
-    top_10_df = grouped_df.sort_values(by='TOTAL_NUMBER', ascending=False).head(10).reset_index(drop=True)
-
-    return top_10_df
-
-
+    try:
+        selected_df = df[['OFFENCE_CODE', 'OFFENCE_DESC', 'TOTAL_NUMBER']]
+        grouped_df = selected_df.groupby(['OFFENCE_CODE', 'OFFENCE_DESC']).sum().reset_index()
+        # Sorting the dataframe by TOTAL_NUMBER in descending order and selecting top 10
+        top_10_df = grouped_df.sort_values(by='TOTAL_NUMBER', ascending=False).head(10).reset_index(drop=True)
+        return top_10_df
+    except:
+        return None
+    
 def filter_by_off_desc(df, desc):
     filtered_df = df[df['OFFENCE_DESC'].str.contains(desc)]
     return filtered_df
@@ -143,8 +144,8 @@ def filter_by_camera_radar(df, camera_checked, lidar_checked, radar_checked):
     conditions = []
 
     if camera_checked:
-        conditions.append(df['CAMERA_TYPE'].notna())
         conditions.append(df['OFFENCE_DESC'].str.contains("Camera", case=False, na=False))
+        conditions.append(df['CAMERA_TYPE'].notna())
 
     if lidar_checked:
         conditions.append(df['OFFENCE_DESC'].str.contains("Lidar", case=False, na=False))
@@ -153,8 +154,8 @@ def filter_by_camera_radar(df, camera_checked, lidar_checked, radar_checked):
         conditions.append(df['OFFENCE_DESC'].str.contains("Radar", case=False, na=False))
         conditions.append(df['SPEED_CAMERA_IND'].notna())
 
-    if not conditions:  # if no checkboxes are selected
-        return df  # or you can return an empty DataFrame with df.iloc[0:0]
+    if not conditions: 
+        return df  
 
     final_condition = conditions[0]
     for condition in conditions[1:]:
@@ -164,8 +165,10 @@ def filter_by_camera_radar(df, camera_checked, lidar_checked, radar_checked):
 
     return filtered_df
 
-
 def group_total_fees_by_column_name(df, column_name):
+    if 'TOTAL_VALUE' not in df.columns or column_name not in df.columns:
+        return "No TOTAL_VALUE Column in Dataframe"
+    
     filtered_df = df.groupby([column_name])['TOTAL_VALUE'].sum().reset_index()
     filtered_df = filtered_df.sort_values('TOTAL_VALUE', ascending=False)
     return filtered_df

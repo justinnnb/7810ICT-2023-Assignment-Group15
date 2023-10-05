@@ -217,7 +217,7 @@ class MainApp ( wx.Frame ):
 		self.datePickerTab4From = wx.adv.DatePickerCtrl( self.panel_4, wx.ID_ANY, wx.DefaultDateTime, wx.DefaultPosition, wx.Size( 100,-1 ), wx.adv.DP_DEFAULT )
 		boxDatePickertab4.Add( self.datePickerTab4From, 0, wx.ALL, 5 )
 
-		self.m_staticText81 = wx.StaticText( self.panel_4, wx.ID_ANY, u"From:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText81 = wx.StaticText( self.panel_4, wx.ID_ANY, u"To:", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText81.Wrap( -1 )
 
 		boxDatePickertab4.Add( self.m_staticText81, 0, wx.ALL, 5 )
@@ -292,7 +292,7 @@ class MainApp ( wx.Frame ):
 		self.panel_4.SetSizer( boxCaseCaptured )
 		self.panel_4.Layout()
 		boxCaseCaptured.Fit( self.panel_4 )
-		self.main_notebook.AddPage( self.panel_4, u"Cases Captured", False, wx.NullBitmap )
+		self.main_notebook.AddPage( self.panel_4, u"Cases Captured by Camera", False, wx.NullBitmap )
 		self.panel_5 = wx.Panel( self.main_notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer1_panel5 = wx.BoxSizer( wx.VERTICAL )
 
@@ -341,7 +341,7 @@ class MainApp ( wx.Frame ):
 		self.panel_5.SetSizer( bSizer1_panel5 )
 		self.panel_5.Layout()
 		bSizer1_panel5.Fit( self.panel_5 )
-		self.main_notebook.AddPage( self.panel_5, u"Cases Analysis", False, wx.NullBitmap )
+		self.main_notebook.AddPage( self.panel_5, u"Mobile-Related Cases Analysis", False, wx.NullBitmap )
 		self.panel_6 = wx.Panel( self.main_notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		boxFinancialAnalysis = wx.BoxSizer( wx.VERTICAL )
 
@@ -355,7 +355,7 @@ class MainApp ( wx.Frame ):
 		self.datePickerTab6From = wx.adv.DatePickerCtrl( self.panel_6, wx.ID_ANY, wx.DefaultDateTime, wx.DefaultPosition, wx.Size( 100,-1 ), wx.adv.DP_DEFAULT )
 		boxDatePickertab41.Add( self.datePickerTab6From, 0, wx.ALL, 5 )
 
-		self.m_staticText811 = wx.StaticText( self.panel_6, wx.ID_ANY, u"From:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText811 = wx.StaticText( self.panel_6, wx.ID_ANY, u"To:", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText811.Wrap( -1 )
 
 		boxDatePickertab41.Add( self.m_staticText811, 0, wx.ALL, 5 )
