@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ###########################################################################
-## Python code generated with wxFormBuilder (version 3.10.1-376-g11d0e737)
+## Python code generated with wxFormBuilder (version 3.10.1-370-gc831f1f7)
 ## http://www.wxformbuilder.org/
 ##
 ## PLEASE DO *NOT* EDIT THIS FILE!
@@ -12,6 +12,7 @@ import wx.xrc
 import wx.aui
 import wx.adv
 import wx.grid
+from error_box import *
 
 mainNotebook = 1000
 
@@ -29,11 +30,78 @@ class MainApp ( wx.Frame ):
 		main_container = wx.BoxSizer( wx.VERTICAL )
 
 		# self.main_notebook = wx.aui.AuiNotebook( self, mainNotebook, wx.DefaultPosition, wx.DefaultSize, wx.aui.AUI_NB_DEFAULT_STYLE )
-		# delete close button
 		self.main_notebook = wx.aui.AuiNotebook(self, mainNotebook, wx.DefaultPosition, wx.DefaultSize,
-												wx.aui.AUI_NB_TAB_SPLIT | wx.aui.AUI_NB_TAB_MOVE | wx.aui.AUI_NB_SCROLL_BUTTONS)
+										wx.aui.AUI_NB_TAB_SPLIT | wx.aui.AUI_NB_TAB_MOVE | wx.aui.AUI_NB_SCROLL_BUTTONS)
 
 		self.panel_1 = wx.Panel( self.main_notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		bSizer18 = wx.BoxSizer( wx.VERTICAL )
+
+		bSizer21 = wx.BoxSizer( wx.HORIZONTAL )
+
+		self.m_bitmap1 = wx.StaticBitmap( self.panel_1, wx.ID_ANY, wx.Bitmap( u"Griffith Uni Logo.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_bitmap1.SetMaxSize( wx.Size( 300,300 ) )
+
+		bSizer21.Add( self.m_bitmap1, 0, 0, 5 )
+
+		self.m_bitmap2 = wx.StaticBitmap( self.panel_1, wx.ID_ANY, wx.Bitmap( u"NSW Traffic Logo.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_bitmap2.SetMaxSize( wx.Size( 400,300 ) )
+
+		bSizer21.Add( self.m_bitmap2, 0, 0, 5 )
+
+
+		bSizer18.Add( bSizer21, 0, wx.ALIGN_CENTER_HORIZONTAL, 5 )
+
+		bSizer22 = wx.BoxSizer( wx.VERTICAL )
+
+		self.m_staticText14 = wx.StaticText( self.panel_1, wx.ID_ANY, u"Software Technologies 7810ICT_3235 ", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText14.Wrap( -1 )
+
+		self.m_staticText14.SetFont( wx.Font( 36, wx.FONTFAMILY_SWISS, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "Trebuchet MS" ) )
+
+		bSizer22.Add( self.m_staticText14, 0, wx.ALIGN_CENTER|wx.ALL, 5 )
+
+		self.m_staticText18 = wx.StaticText( self.panel_1, wx.ID_ANY, u"NSW Traffic Penalty Data", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText18.Wrap( -1 )
+
+		self.m_staticText18.SetFont( wx.Font( 24, wx.FONTFAMILY_SWISS, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "Trebuchet MS" ) )
+
+		bSizer22.Add( self.m_staticText18, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+
+		self.m_staticText15 = wx.StaticText( self.panel_1, wx.ID_ANY, u"Developers:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText15.Wrap( -1 )
+
+		self.m_staticText15.SetFont( wx.Font( 18, wx.FONTFAMILY_SWISS, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "Trebuchet MS" ) )
+
+		bSizer22.Add( self.m_staticText15, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+
+		self.m_staticText16 = wx.StaticText( self.panel_1, wx.ID_ANY, u"Daehoon Seong", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText16.Wrap( -1 )
+
+		self.m_staticText16.SetFont( wx.Font( 18, wx.FONTFAMILY_SWISS, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "Trebuchet MS" ) )
+
+		bSizer22.Add( self.m_staticText16, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+
+		self.m_staticText17 = wx.StaticText( self.panel_1, wx.ID_ANY, u"Waraphorn Srisomboonkamol", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText17.Wrap( -1 )
+
+		self.m_staticText17.SetFont( wx.Font( 18, wx.FONTFAMILY_SWISS, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "Trebuchet MS" ) )
+
+		bSizer22.Add( self.m_staticText17, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+
+		self.m_staticText19 = wx.StaticText( self.panel_1, wx.ID_ANY, u"Justin Bilao", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText19.Wrap( -1 )
+
+		self.m_staticText19.SetFont( wx.Font( 18, wx.FONTFAMILY_SWISS, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL, False, "Trebuchet MS" ) )
+
+		bSizer22.Add( self.m_staticText19, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+
+
+		bSizer18.Add( bSizer22, 1, wx.EXPAND, 5 )
+
+
+		self.panel_1.SetSizer( bSizer18 )
+		self.panel_1.Layout()
+		bSizer18.Fit( self.panel_1 )
 		self.main_notebook.AddPage( self.panel_1, u"Home", False, wx.NullBitmap )
 		self.panel_2 = wx.Panel( self.main_notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		boxGeneralReport = wx.BoxSizer( wx.VERTICAL )
@@ -117,7 +185,7 @@ class MainApp ( wx.Frame ):
 		self.m_datePicker1_panel3 = wx.adv.DatePickerCtrl( self.panel_3, wx.ID_ANY, wx.DefaultDateTime, wx.DefaultPosition, wx.DefaultSize, wx.adv.DP_DEFAULT )
 		bSizer12_panel3.Add( self.m_datePicker1_panel3, 0, wx.ALL, 5 )
 
-		self.m_staticText2_panel3 = wx.StaticText( self.panel_3, wx.ID_ANY, u"From:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText2_panel3 = wx.StaticText( self.panel_3, wx.ID_ANY, u"To:", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText2_panel3.Wrap( -1 )
 
 		bSizer12_panel3.Add( self.m_staticText2_panel3, 0, wx.ALL, 5 )
@@ -125,7 +193,7 @@ class MainApp ( wx.Frame ):
 		self.m_datePicker2_panel3 = wx.adv.DatePickerCtrl( self.panel_3, wx.ID_ANY, wx.DefaultDateTime, wx.DefaultPosition, wx.DefaultSize, wx.adv.DP_DEFAULT )
 		bSizer12_panel3.Add( self.m_datePicker2_panel3, 0, wx.ALL, 5 )
 
-		self.m_button1_panel3 = wx.Button( self.panel_3, wx.ID_ANY, u"Plot", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button1_panel3 = wx.Button( self.panel_3, wx.ID_ANY, u"Submit", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer12_panel3.Add( self.m_button1_panel3, 0, wx.ALL, 5 )
 
 

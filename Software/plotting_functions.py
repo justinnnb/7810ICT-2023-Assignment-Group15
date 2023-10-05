@@ -2,56 +2,45 @@ import pandas as pd
 from datetime import datetime
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
+from error_box import *
 
 
 def read_data(file_name):
-    cols_name: list = ['OFFENCE_MONTH', 'OFFENCE_CODE', 'OFFENCE_DESC', 'LEGISLATION', 'CAMERA_IND', 'LOCATION_CODE',
-                       'LEGISLATION', 'LOCATION_DETAILS', 'SPEED_CAMERA_IND', 'RED_LIGHT_CAMERA_IND', 'CAMERA_TYPE',
-                       'TOTAL_NUMBER', 'TOTAL_VALUE']
-    df = pd.read_csv(file_name, usecols=cols_name)
-    df['OFFENCE_MONTH'] = pd.to_datetime(df['OFFENCE_MONTH'], format='%m/%d/%Y')
-    return df
-
+    try:
+        cols_name: list = ['OFFENCE_MONTH', 'OFFENCE_CODE', 'OFFENCE_DESC', 'LEGISLATION', 'CAMERA_IND', 'LOCATION_CODE',
+                        'LEGISLATION', 'LOCATION_DETAILS', 'SPEED_CAMERA_IND', 'RED_LIGHT_CAMERA_IND', 'CAMERA_TYPE',
+                        'TOTAL_NUMBER', 'TOTAL_VALUE']
+        df = pd.read_csv(file_name, usecols=cols_name)
+        df['OFFENCE_MONTH'] = pd.to_datetime(df['OFFENCE_MONTH'], format='%m/%d/%Y')
+        return df
+    except Exception as e:
+        e = "File not found or wrong file type."
+        return e
 
 def filter_by_period(df, from_date, to_date):
-    """Filter the data based on date range."""
-    # start_date = self.m_datePicker1.GetValue().FormatISODate()
-    # end_date = self.m_datePicker2.GetValue().FormatISODate()
-    from_wx_date = from_date.GetValue()
-    to_wx_date = to_date.GetValue()
+    try:
+        """Filter the data based on date range."""
+        from_wx_date = from_date.GetValue()
+        to_wx_date = to_date.GetValue()
 
-    # Convert wx.DateTime to Python datetime
-    # from_date = datetime.fromtimestamp(from_date.GetTicks())
-    # to_date = datetime.fromtimestamp(to_date.GetTicks())
-    from_date = datetime.fromtimestamp(from_wx_date.GetTicks())
-    to_date = datetime.fromtimestamp(to_wx_date.GetTicks())
+        # Convert wx.DateTime to Python datetime
+        from_date = datetime.fromtimestamp(from_wx_date.GetTicks())
+        to_date = datetime.fromtimestamp(to_wx_date.GetTicks())
 
-    # Format the datetime object as a string in the format "20/09/2023"
-    from_date = from_date.strftime('%d/%m/%Y')
-    to_date = to_date.strftime('%d/%m/%Y')
-    start_date = datetime.strptime(from_date, '%d/%m/%Y')
-    end_date = datetime.strptime(to_date, '%d/%m/%Y')
+        # Format the datetime object as a string in the format "20/09/2023"
+        from_date = from_date.strftime('%d/%m/%Y')
+        to_date = to_date.strftime('%d/%m/%Y')
+        start_date = datetime.strptime(from_date, '%d/%m/%Y')
+        end_date = datetime.strptime(to_date, '%d/%m/%Y')
 
-    # Assuming the date column in your dataframe is named 'Date'
-    # self.original_df['OFFENCE_MONTH'] = pd.to_datetime(self.original_df['OFFENCE_MONTH'], format='%m/%d/%Y')
+        filtered_df = df[(df['OFFENCE_MONTH'] >= start_date) & (df['OFFENCE_MONTH'] <= end_date)]
 
-    filtered_df = df[(df['OFFENCE_MONTH'] >= start_date) & (df['OFFENCE_MONTH'] <= end_date)]
+        return filtered_df
+    except Exception as e:
+        e = "Time data is not a date object."
+        return e
+        
 
-    # print(filtered_df)
-
-    # self.load_csv_to_grid_from_df(filtered_df)  # /////////// Using a new method to load data from DataFrame
-    return filtered_df
-
-
-import matplotlib.pyplot as plt
-
-import matplotlib.pyplot as plt
-
-
-import matplotlib.pyplot as plt
-
-
-import matplotlib.pyplot as plt
 
 def plot_data_line(df, selected_offence_code=None):
     if df.empty:

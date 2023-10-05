@@ -1,10 +1,11 @@
 import wx
 import wx.grid
-
+import sys
 from data_table import DataTable
 
 import plotting_functions
 from grid_template import MainApp
+from error_box import *
 
 import matplotlib
 
@@ -12,14 +13,33 @@ matplotlib.use('WXAgg')
 
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg
 
+
 filename = "original.csv"
 # filename="test_data.csv"
-df = plotting_functions.read_data(filename)
+# df = plotting_functions.read_data(filename)
 
 
 class MainFrame(MainApp):
     def __init__(self, parent=None):
         super().__init__(parent)
+
+        self.df = plotting_functions.read_data(filename)
+        print(self.df)
+        if isinstance(self.df, str): 
+            # Create the error dialog
+            error_dlg = errorDialog(None)
+            
+            # Set the error message
+            error_dlg.set_error_message(str(self.df))
+            
+            # Show the dialog
+            error_dlg.ShowModal()
+            
+            # Destroy the dialog when done
+            error_dlg.Destroy()
+            sys.exit()
+            
+        
 
         self.onShowTablePanel2(None)
         self.onShowTablePanel4(None)
@@ -30,15 +50,16 @@ class MainFrame(MainApp):
         self.Layout()
         self.Show(True)
 
+
     def onShowTablePanel2(self, event):
-        filtered_df = plotting_functions.filter_by_period(df, self.m_datePicker1_panel2, self.m_datePicker2_panel2)
+        filtered_df = plotting_functions.filter_by_period(self.df, self.m_datePicker1_panel2, self.m_datePicker2_panel2)
         table = DataTable(filtered_df)
         self.resultGrid.SetTable(table, takeOwnership=True)
         self.resultGrid.AutoSize()
         self.Layout()
 
     def onPlotPanel3(self, event):
-        filtered_df = plotting_functions.filter_by_period(df, self.m_datePicker1_panel3, self.m_datePicker2_panel3)
+        filtered_df = plotting_functions.filter_by_period(self.df, self.m_datePicker1_panel3, self.m_datePicker2_panel3)
         figure_score = plotting_functions.plot_data_pie(filtered_df)
         h, w = self.m_canvas1_panel3.GetSize()
         figure_score.set_size_inches(h / figure_score.get_dpi(), w / figure_score.get_dpi())
@@ -53,7 +74,7 @@ class MainFrame(MainApp):
         camera_checked = self.checkBoxCamera.GetValue()
         lidar_checked = self.checkBoxLidar.GetValue()
 
-        filtered_df = plotting_functions.filter_by_period(df, self.datePickerTab4From, self.datePickerTab4To)
+        filtered_df = plotting_functions.filter_by_period(self.df, self.datePickerTab4From, self.datePickerTab4To)
 
         filtered_df = plotting_functions.filter_by_camera_radar(
             filtered_df,
@@ -72,7 +93,7 @@ class MainFrame(MainApp):
 
 
     def initOffenceCodeByPhone(self):
-        filtered_df = plotting_functions.filter_by_phone(df)
+        filtered_df = plotting_functions.filter_by_phone(self.df)
 
         # Get unique values from 'OFFENCE_CODE' column
         offence_codes = sorted(filtered_df['OFFENCE_CODE'].unique().astype(str).tolist())
@@ -92,7 +113,7 @@ class MainFrame(MainApp):
             return
 
         # Use the filter_by_off_code function to filter df by the selected offence code
-        filtered_by_code_df = plotting_functions.filter_by_off_code(df, selected_offence_code)
+        filtered_by_code_df = plotting_functions.filter_by_off_code(self.df, selected_offence_code)
 
         filtered_by_date_df = plotting_functions.filter_by_period(filtered_by_code_df, self.m_datePicker1_panel5,
                                                                   self.m_datePicker2_panel5)
@@ -112,7 +133,7 @@ class MainFrame(MainApp):
         self.m_choice11.Clear()  # Clear existing items if any
         self.m_choice11.AppendItems(categories)  # Add the new list of items
     def onShowTablePanel6(self, event):
-        filtered_df = plotting_functions.filter_by_period(df, self.datePickerTab6From, self.datePickerTab6To)
+        filtered_df = plotting_functions.filter_by_period(self.df, self.datePickerTab6From, self.datePickerTab6To)
         selected_category = self.m_choice11.GetStringSelection()
         filtered_df = plotting_functions.group_total_fees_by_column_name(filtered_df, selected_category)
 
