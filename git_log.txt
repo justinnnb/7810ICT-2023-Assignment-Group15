@@ -1,0 +1,35 @@
+commit cff038eef3c66a97a82d930188a9a49e389023bc
+Author: Waraphorn Srisomboonkamol <waraphornsrisomboonkamol@Waraphorns-MacBook-Pro.local>
+Date:   Sun Sep 3 14:07:18 2023 +1000
+
+    update software development docs
+
+commit 046bc165e301b484462aa8e1f2f806198b3ebdbc
+Author: Justin <orochitachi13@gmail.com>
+Date:   Sun Sep 3 12:22:15 2023 +1000
+
+    added final software design document pdf version
+
+commit 035c974dfd86c8c699969fd9575db31b0f55f83b
+Author: Danny Seong <daehoon.seong@gmail.com>
+Date:   Sun Sep 3 09:28:26 2023 +1000
+
+    update readme.md
+
+commit 514d74c010af467c3835a26add667eb20bca7c27
+Author: Danny Seong <daehoon.seong@gmail.com>
+Date:   Sun Sep 3 09:24:13 2023 +1000
+
+    update project plan
+
+commit 581c26e1354105d334d82783a9aa2b50562f9fd1
+Author: Danny Seong <daehoon.seong@gmail.com>
+Date:   Sun Sep 3 09:22:35 2023 +1000
+
+    update gantt chart
+
+commit 0e8c3b56ac20057b8ca4159dcf42d5be895628e6
+Author: Justin Bilao <96006037+justinnnb@users.noreply.github.com>
+Date:   Tue Aug 29 13:52:23 2023 +1000
+
+    Initial commit
