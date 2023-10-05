@@ -1,0 +1,113 @@
+OFFENCE_FINYEAR,OFFENCE_MONTH,OFFENCE_CODE,OFFENCE_DESC,LEGISLATION,SECTION_CLAUSE,FACE_VALUE,CAMERA_IND,CAMERA_TYPE,LOCATION_CODE,LOCATION_DETAILS,SCHOOL_ZONE_IND,SPEED_BAND,SPEED_IND,POINT_TO_POINT_IND,RED_LIGHT_CAMERA_IND,SPEED_CAMERA_IND,SEATBELT_IND,MOBILE_PHONE_IND,PARKING_IND,CINS_IND,FOOD_IND,BICYCLE_TOY_ETC_IND,TOTAL_NUMBER,TOTAL_VALUE
+2011-2012,1/2/2012,66466,Fail to notify change of address,ROAD TRANSPORT (DRIVER LICENSING) REGULATION 2008,117(1)(b),88,,,,,,,,,,,,,,,,,135,11880
+2011-2012,1/3/2012,770,Larceny (Under 300 dollars),CRIMES ACT 1900,117,300,,,,,,,,,,,,,,Y,,,56,16800
+2011-2012,1/3/2012,6963,Disobey no stopping sign,ROAD RULES 2008,167,206,,,,,,,,,,,,,Y,,,,12121,2496926
+2011-2012,1/4/2012,18125,Be nude near bathing place/river/watercourse/water/sea,LOCAL GOVERNMENT ACT 1993,633(2),110,,,,,,,,,,,,,,,,,3,330
+2011-2012,1/5/2012,74460,P1 driver exceed 90 km/h - over 20 km/h - Radar,ROAD RULES 2008,20,371,,,,,,EXCEED SPEED OVER 20KM/H,Y,,,,,,,,,,39,14469
+2011-2012,1/5/2012,19584,Owner use vehicle on road/road related area with tax unpaid,MOTOR VEHICLES TAXATION ACT 1988,9(1)(a),530,,,,,,,,,,,,,,,,,231,122430
+2011-2012,1/5/2012,24731,Proceed through red traffic light - Camera Detected - Corporation,ROAD RULES 2008,59(1),353,Y,Red Light / Speed Camera,7176,HUME HIGHWAY WARWICK FARM WESTBOUND,,NOT STOP AT RED LIGHT,,,Y,,,,,,,,1,353
+2011-2012,1/5/2012,63090,Use Class B/C vehicle with expired label,ROAD TRANSPORT (VEHICLE REGISTRATION) REGULATION 2007,85(1)(c),530,,,,,,,,,,,,,,,,,69,36570
+2012-2013,1/7/2012,6994,Double park,ROAD RULES 2008,189,232,,,,,,,,,,,,,Y,,,,869,201608
+2012-2013,1/7/2012,64427,Cross when pedestrian lights not green,ROAD RULES 2008,231(1),66,,,,,,,,,,,,,,,,,15,990
+2012-2013,1/8/2012,64395,Not lock doors/secure windows (vehicle unattended),ROAD RULES 2008,213,99,,,,,,,,,,,,,,,,,11,1089
+2012-2013,1/8/2012,66455,Not comply conditions of licence (not clause 22(b) - 32 - 33 - 34),ROAD TRANSPORT (DRIVER LICENSING) REGULATION 2008,114(1),232,,,,,,,,,,,,,,,,,306,70992
+2012-2013,1/9/2012,74705,Exceed speed limit over 20km/h - Camera Detected,ROAD RULES 2008,20,417,Y,Mobile Digital Speed Camera,11634,MATE STREET NORTH ALBURY NORTHBOUND,,EXCEED SPEED OVER 20KM/H,Y,,,Y,,,,,,,1,417
+2012-2013,1/12/2012,16803,Development not accord consent - class 1 or 10 building - Corporation,ENVIRONMENTAL PLANNING AND ASSESSMENT ACT 1979,76A(1)(b),1500,,,,,,,,,,,,,,,,,15,22500
+2012-2013,1/2/2013,74079,Fail to surrender number-plate to Authority,ROAD TRANSPORT (VEHICLE REGISTRATION) REGULATION 2007,26(1),99,,,,,,,,,,,,,,,,,4,396
+2012-2013,1/3/2013,64257,Not keep left of median strip - (motor vehicle),ROAD RULES 2008,135(1),298,,,,,,,,,,,,,,,,,30,8940
+2012-2013,1/4/2013,64220,Not give way to vehicle when entering roundabout,ROAD RULES 2008,114(1)(a),298,,,,,,,,,,,,,,,,,107,31886
+2012-2013,1/5/2013,77981,Driver use mobile phone when not permitted,ROAD RULES 2008,300,298,,,,,,,,,,,,Y,,,,,2499,744702
+2012-2013,1/5/2013,74701,Exceed speed limit 10km/h and under - Camera Detected,ROAD RULES 2008,20,105,Y,Mobile Digital Speed Camera,22462,MOOREFIELDS ROAD KINGSGROVE EASTBOUND,,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,29,3045
+2012-2013,1/5/2013,74439,Learner exceed 90 km/h - over 20 km/h - Lidar,ROAD RULES 2008,20,417,,,,,,EXCEED SPEED OVER 20KM/H,Y,,,,,,,,,,7,2919
+2013-2014,1/8/2013,74701,Exceed speed limit 10km/h and under - Camera Detected,ROAD RULES 2008,20,106,Y,Red Light / Speed Camera,7191,PARKER STREET SOUTH PENRITH NORTHBOUND,,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,12,1272
+2013-2014,1/10/2013,74703,Exceed speed limit over 10km/h - Camera Detected,ROAD RULES 2008,20,248,Y,Mobile Digital Speed Camera,22811,PALMYRA AVENUE LETHBRIDGE PARK NORTHBOUND,,EXCEED SPEED OVER 10KM/H,Y,,,Y,,,,,,,8,1984
+2013-2014,1/10/2013,74912,Use uninsured motor vehicle,MOTOR ACCIDENTS COMPENSATION ACT 1999,8(1)(a),607,,,,,,,,,,,,,,,,,1533,930531
+2013-2014,1/10/2013,74707,Exceed speed limit over 30 km/h - Camera Detected,ROAD RULES 2008,20,815,Y,Fixed Digital Speed Camera,9556,MEMORIAL DRIVE CORRIMAL NORTHBOUND,,EXCEED SPEED OVER 30KM/H,Y,,,Y,,,,,,,2,1630
+2013-2014,1/11/2013,74912,Use uninsured motor vehicle,MOTOR ACCIDENTS COMPENSATION ACT 1999,8(1)(a),607,,,,,,,,,,,,,,,,,1594,967558
+2013-2014,1/11/2013,74703,Exceed speed limit over 10km/h - Camera Detected,ROAD RULES 2008,20,248,Y,Mobile Digital Speed Camera,10773,HUME HIGHWAY MARULAN WESTBOUND,,EXCEED SPEED OVER 10KM/H,Y,,,Y,,,,,,,1,248
+2013-2014,1/11/2013,64189,Disobey no entry sign-motor vehicle,ROAD RULES 2008,100,236,,,,,,,,,,,,,,,,,244,57584
+2013-2014,1/11/2013,64515,Motor bike rider (alone) not wear/securely fit approved helmet,ROAD RULES 2008,270(1)(a),304,,,,,,,,,,,,,,,,,84,25536
+2013-2014,1/11/2013,74721,Exceed speed limit 10 km/h and under - Camera Detected,ROAD RULES 2008,20,319,Y,Red Light / Speed Camera,7283,BRIENS ROAD NORTHMEAD WESTBOUND,,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,1,319
+2013-2014,1/12/2013,74705,Exceed speed limit over 20km/h - Camera Detected,ROAD RULES 2008,20,425,Y,Red Light / Speed Camera,7194,PITTWATER ROAD DEE WHY SOUTHBOUND,,EXCEED SPEED OVER 20KM/H,Y,,,Y,,,,,,,3,1275
+2013-2014,1/1/2014,9325,Fail to comply with terms of notice erected by council,LOCAL GOVERNMENT ACT 1993,632(1),110,,,,,,,,,,,,,,,,,148,16280
+2013-2014,1/1/2014,66455,Not comply conditions of licence (not clause 22(b) - 32 - 33 - 34),ROAD TRANSPORT (DRIVER LICENSING) REGULATION 2008,114(1),236,,,,,,,,,,,,,,,,,336,79296
+2013-2014,1/1/2014,64165,Disobey right turn only sign,ROAD RULES 2008,89(1),236,,,,,,,,,,,,,,,,,56,13216
+2013-2014,1/1/2014,74912,Use uninsured motor vehicle,MOTOR ACCIDENTS COMPENSATION ACT 1999,8(1)(a),607,,,,,,,,,,,,,,,,,1520,922640
+2013-2014,1/2/2014,81507,Not comply notice to register companion animal - not dangerous/menacing/restricted dog,COMPANION ANIMALS ACT 1998,10B(2),275,,,,,,,,,,,,,,,,,227,62425
+2013-2014,1/2/2014,74703,Exceed speed limit over 10km/h - Camera Detected,ROAD RULES 2008,20,248,Y,Fixed Digital Speed Camera,9802,FITZWILLIAM ROAD TOONGABBIE (Z) EASTBOUND,,EXCEED SPEED OVER 10KM/H,Y,,,Y,,,,,,,4,992
+2013-2014,1/3/2014,81645,Use vehicle not comply with standard headlights,ROAD TRANSPORT (VEHICLE REGISTRATION) REGULATION 2007,52(1)(a)(i),101,,,,,,,,,,,,,,,,,52,5252
+2013-2014,1/3/2014,71061,Passenger 16 years or older not wear seat belt properly,ROAD RULES 2008,267-1(3),304,,,,,,,,,,,Y,,,,,,11,3344
+2013-2014,1/4/2014,8466,Stop within 10 metres of an intersection without traffic lights,ROAD RULES 2008,170(3),236,,,,,,,,,,,,,Y,,,,1322,311992
+2013-2014,1/4/2014,71999,Not keep left of centre two-way road - (not class B/C),ROAD RULES 2008,132(1),304,,,,,,,,,,,,,,,,,13,3952
+2013-2014,1/5/2014,64032,Not give way to oncoming vehicle (right turn),ROAD RULES 2008,63(3),304,,,,,,,,,,,,,,,,,48,14592
+2014-2015,1/7/2014,64077,Not stop at stop line/sign (intersection with no lights),ROAD RULES 2008,67(1),311,,,,,,,,,,,,,,,,,890,276790
+2014-2015,1/7/2014,64503,Passenger not wear seatbelt adjusted and fastened (16 years or older),ROAD RULES 2008,265(1),311,,,,,,,,,,,Y,,,,,,177,55047
+2014-2015,1/8/2014,74345,Class A motor vehicle exceed speed limit - 10 km/h and under,ROAD RULES 2008,20,109,,,,,,EXCEED SPEED 10KM/H OR UNDER,Y,,,,,,,,,,469,51121
+2014-2015,1/8/2014,64044,Not give way to vehicle (right turn),ROAD RULES 2008,63(3),311,,,,,,,,,,,,,,,,,15,4665
+2014-2015,1/9/2014,8405,Not parallel park in direction of travel,ROAD RULES 2008,208(1),173,,,,,,,,,,,,,Y,,,,1007,174211
+2014-2015,1/9/2014,79220,Negligent driving (no death or grievous bodily harm),ROAD TRANSPORT ACT 2013,117(1)(c),415,,,,,,,,,,,,,,,,,1369,568135
+2014-2015,1/9/2014,74360,Class A motor vehicle exceed speed limit - over 20 km/h - Radar,ROAD RULES 2008,20,436,,,,,,EXCEED SPEED OVER 20KM/H,Y,,,,,,,,,,998,435128
+2014-2015,1/10/2014,8395,Stop on path/strip in built-up area,ROAD RULES 2008,197(1),104,,,,,,,,,,,,,Y,,,,1960,203840
+2014-2015,1/10/2014,74479,P2 driver exceed 100 km/h - over 20 km/h - Lidar,ROAD RULES 2008,20,436,,,,,,EXCEED SPEED OVER 20KM/H,Y,,,,,,,,,,60,26160
+2014-2015,1/10/2014,6965,Stop at side of road with continuous yellow edge line,ROAD RULES 2008,169,242,,,,,,,,,,,,,Y,,,,361,87362
+2014-2015,1/10/2014,81648,Use Class A vehicle number plate obscured/defaced,ROAD TRANSPORT (VEHICLE REGISTRATION) REGULATION 2007,52(1)(a)(i),415,,,,,,,,,,,,,,,,,149,61835
+2014-2015,1/11/2014,64004,Proceed through red traffic light (not toll booth),ROAD RULES 2008,59(1),415,,,,,,NOT STOP AT RED LIGHT,,,,,,,,,,,115,47725
+2014-2015,1/11/2014,80743,Driver fail to produce for inspection work diary or device,HEAVY VEHICLE NATIONAL LAW (NSW),568(3),615,,,,,,,,,,,,,,,,,9,5535
+2014-2015,1/12/2014,83110,Class A motor vehicle exceed speed limit - over 30 km/h - Radar,ROAD RULES 2014,20,835,,,,,,EXCEED SPEED OVER 30KM/H,Y,,,,,,,,,,199,166165
+2014-2015,1/12/2014,16271,Development without development consent - other - Individual,ENVIRONMENTAL PLANNING AND ASSESSMENT ACT 1979,76A(1)(a),1500,,,,,,,,,,,,,,,,,22,33000
+2014-2015,1/1/2015,79447,Display scheme authority in contravention of any condition,ROAD TRANSPORT (GENERAL) REGULATION 2013,111(1),623,,,,,,,,,,,,,Y,,,,17,10591
+2014-2015,1/1/2015,83063,Motor vehicle exceed speed limit - 10 km/h and under - Camera recorded - Individual,ROAD RULES 2014,20,109,Y,Mobile Digital Speed Camera,23425,WYONG ROAD TUMBI UMBI NORTHBOUND,,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,2,218
+2014-2015,1/1/2015,81630,Use vehicle not comply with standard tail lights,ROAD TRANSPORT (VEHICLE REGISTRATION) REGULATION 2007,52(1)(a)(i),104,,,,,,,,,,,,,,,,,78,8112
+2014-2015,1/2/2015,82740,Disobey no parking sign,ROAD RULES 2014,168(1),104,,,,,,,,,,,,,Y,,,,6669,693576
+2014-2015,1/2/2015,83596,Disobey no stopping sign (in school zone),ROAD RULES 2014,167,311,,,,,Y,,,,,,,,Y,,,,1204,374444
+2014-2015,1/2/2015,82792,Drive in bus lane - Camera recorded - Individual,ROAD RULES 2014,154(1),311,Y,Fixed Digital Bus Lane Camera,8424,WARRINGAH FREEWAY NORTH SYDNEY SOUTHBOUND,,,,,,,,,,,,,692,215212
+2014-2015,1/3/2015,83512,Disobey no trucks sign,ROAD RULES 2014,104(3),173,,,,,,,,,,,,,,,,,3,519
+2014-2015,1/4/2015,83347,Stop at/near bus stop (in school zone),ROAD RULES 2014,195(1),311,,,,,Y,,,,,,,,Y,,,,8,2488
+2014-2015,1/4/2015,83202,P1 driver exceed 90 km/h - over 20 km/h,ROAD RULES 2014,20,436,,,,,,EXCEED SPEED OVER 20KM/H,Y,,,,,,,,,,21,9156
+2014-2015,1/5/2015,82656,Driver not wear seatbelt properly adjusted/fastened,ROAD RULES 2014,264(1),311,,,,,,,,,,,Y,,,,,,620,192820
+2014-2015,1/5/2015,83051,Motor vehicle exceed speed limit - 10 km/h and under - School Zone - Camera recorded - Individual,ROAD RULES 2014,20,436,Y,Red Light / Speed Camera,7254,LANE COVE ROAD (SOUTHBOUND) NORTH RYDE SOUTHBOUND,Y,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,1,436
+2014-2015,1/5/2015,83615,Double park,ROAD RULES 2014,189(1),242,,,,,,,,,,,,,Y,,,,550,133100
+2014-2015,1/6/2015,83423,Stop within 10 metres of an intersection (no traffic lights),ROAD RULES 2014,170(3),242,,,,,,,,,,,,,Y,,,,1058,256036
+2015-2016,1/7/2015,82616,Park continuously for longer than permitted,ROAD RULES 2014,205,106,,,,,,,,,,,,,Y,,,,23009,2438954
+2015-2016,1/7/2015,82995,Motor vehicle exceed speed limit - over 20 km/h - Camera recorded - Individual,ROAD RULES 2014,20,446,Y,Fixed Digital Speed Camera,9851,EDGAR STREET CONDELL PARK (Z) NORTHBOUND,,EXCEED SPEED OVER 20KM/H,Y,,,Y,,,,,,,1,446
+2015-2016,1/7/2015,34108,Pollute waters - class 1 officer - Corporation,PROTECTION OF THE ENVIRONMENT OPERATIONS ACT 1997,120(1),8000,,,,,,,,,,,,,,,,,21,168000
+2015-2016,1/10/2015,80125,Solo driver rest for less than standard minimum rest time - substantial risk,HEAVY VEHICLE NATIONAL LAW (NSW),250(1)(b),630,,,,,,,,,,,,,,,,,11,6930
+2015-2016,1/10/2015,82739,Disobey no parking sign (in school zone),ROAD RULES 2014,168(1),177,,,,,Y,,,,,,,,Y,,,,648,114696
+2015-2016,1/11/2015,80126,Solo driver rest for less than standard minimum rest time - minor risk,HEAVY VEHICLE NATIONAL LAW (NSW),250(1)(b),420,,,,,,,,,,,,,,,,,11,4620
+2015-2016,1/12/2015,82918,Stop on path/strip in built-up area,ROAD RULES 2014,197(1),106,,,,,,,,,,,,,Y,,,,2429,257474
+2015-2016,1/1/2016,16801,Development not accord consent - other - Corporation,ENVIRONMENTAL PLANNING AND ASSESSMENT ACT 1979,76A(1)(b),6000,,,,,,,,,,,,,,,,,30,180000
+2015-2016,1/1/2016,78425,Carry on unauthorised commercial activity on bus/ferry etc,PASSENGER TRANSPORT REGULATION 2007,64(1),100,,,,,,,,,,,,,,,,,6,600
+2015-2016,1/1/2016,83491,Proceed through red traffic arrow - Camera recorded - Individual,ROAD RULES 2014,60,425,Y,Red Light / Speed Camera,7298,VICTORIA ROAD ERMINGTON EASTBOUND,,NOT STOP AT RED LIGHT,,,Y,,,,,,,,2,850
+2015-2016,1/2/2016,83063,Motor vehicle exceed speed limit - 10 km/h and under - Camera recorded - Individual,ROAD RULES 2014,20,112,Y,Red Light / Speed Camera,7293,RAILWAY PARADE BURWOOD WESTBOUND,,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,54,6048
+2015-2016,1/3/2016,83406,Proceed through red traffic light - Camera recorded - Individual,ROAD RULES 2014,59(1),425,Y,Red Light / Speed Camera,7304,HARROW ROAD BEXLEY SOUTHBOUND,,NOT STOP AT RED LIGHT,,,Y,,,,,,,,55,23375
+2015-2016,1/3/2016,79057,Use unregistered registrable Class B motor vehicle on road,ROAD TRANSPORT ACT 2013,68(1),1346,,,,,,,,,,,,,,,,,24,32304
+2015-2016,1/3/2016,33337,Permit uninsured motor vehicle to be used,MOTOR ACCIDENTS COMPENSATION ACT 1999,8(1)(b),637,,,,,,,,,,,,,,,,,72,45864
+2015-2016,1/3/2016,83063,Motor vehicle exceed speed limit - 10 km/h and under - Camera recorded - Individual,ROAD RULES 2014,20,112,Y,Mobile Digital Speed Camera,12682,THE NORTHERN ROAD SOUTH PENRITH NORTHBOUND,,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,9,1008
+2015-2016,1/4/2016,83359,Passenger seatbelt not adjusted/fastened (16 yrs or older),ROAD RULES 2014,265(1),319,,,,,,,,,,,Y,,,,,,352,112288
+2015-2016,1/4/2016,83063,Motor vehicle exceed speed limit - 10 km/h and under - Camera recorded - Individual,ROAD RULES 2014,20,112,Y,Fixed Digital Speed Camera,9553,PENNANT HILLS ROAD CARLINGFORD WESTBOUND,,EXCEED SPEED 10KM/H OR UNDER,Y,,,Y,,,,,,,63,7056
+2015-2016,1/4/2016,83590,Make U-turn at intersection (no lights) contrary to sign,ROAD RULES 2014,41,248,,,,,,,,,,,,,,,,,24,5952
+2015-2016,1/6/2016,83221,Class A motor vehicle exceed speed limit - 10 km/h and under - Lidar,ROAD RULES 2014,20,112,,,,,,EXCEED SPEED 10KM/H OR UNDER,Y,,,,,,,,,,1005,112560
+2016-2017,1/7/2016,78052,Travel or attempt to travel without valid ticket - adult,PASSENGER TRANSPORT REGULATION 2007,77A(1),200,,,,,,,,,,,,,,,,,8140,1628000
+2016-2017,1/8/2016,81507,Not comply notice to register companion animal - not dangerous/menacing/restricted dog,COMPANION ANIMALS ACT 1998,10B(2),275,,,,,,,,,,,,,,,,,263,72325
+2016-2017,1/9/2016,15267,Excluded person re-enter vicinity of licensed premises,LIQUOR ACT 2007,77(8)(b),550,,,,,,,,,,,,,,,,,16,8800
+2016-2017,1/10/2016,83458,Make U-turn at break in dividing strip contrary to sign,ROAD RULES 2014,39(1),253,,,,,,,,,,,,,,,,,54,13662
+2016-2017,1/10/2016,82661,Stop on/near pedestrian crossing,ROAD RULES 2014,172(1),325,,,,,,,,,,,,,Y,,,,90,29250
+2016-2017,1/11/2016,19584,Owner use vehicle on road/road related area with tax unpaid,MOTOR VEHICLES TAXATION ACT 1988,9(1)(a),650,,,,,,,,,,,,,,,,,441,286650
+2016-2017,1/12/2016,79053,Use unregistered registrable Class A motor vehicle on road,ROAD TRANSPORT ACT 2013,68(1),650,,,,,,,,,,,,,,,,,5505,3578250
+2016-2017,1/12/2016,82616,Park continuously for longer than permitted,ROAD RULES 2014,205,108,,,,,,,,,,,,,Y,,,,15977,1725516
+2016-2017,1/12/2016,83437,Right turn not give way to oncoming vehicle - unmarked intersection,ROAD RULES 2014,72(1),325,,,,,,,,,,,,,,,,,12,3900
+2016-2017,1/3/2017,83004,Class A motor vehicle exceed speed limit - over 20 km/h - Radar,ROAD RULES 2014,20,455,,,,,,EXCEED SPEED OVER 20KM/H,Y,,,,,,,,,,718,326690
+2016-2017,1/3/2017,82739,Disobey no parking sign (in school zone),ROAD RULES 2014,168(1),180,,,,,Y,,,,,,,,Y,,,,1213,218340
+2016-2017,1/3/2017,82631,Rider not wear approved bicycle helmet/fitted/fastened,ROAD RULES 2014,256(1),325,,,,,,,,,,,,,,,,Y,399,129675
+2016-2017,1/4/2017,83491,Proceed through red traffic arrow - Camera recorded - Individual,ROAD RULES 2014,60,433,Y,Red Light / Speed Camera,7296,WILLIAM STREET DARLINGHURST WESTBOUND,,NOT STOP AT RED LIGHT,,,Y,,,,,,,,2,866
+2016-2017,1/5/2017,83221,Class A motor vehicle exceed speed limit - 10 km/h and under - Lidar,ROAD RULES 2014,20,114,,,,,,EXCEED SPEED 10KM/H OR UNDER,Y,,,,,,,,,,1054,120156
+2016-2017,1/6/2017,83011,Class B motor vehicle exceed speed limit - over 10 km/h - Radar,ROAD RULES 2014,20,455,,,,,,EXCEED SPEED OVER 10KM/H,Y,,,,,,,,,,10,4550
+2016-2017,1/6/2017,79788,Use unregistered trailer on road,ROAD TRANSPORT ACT 2013,68(1),650,,,,,,,,,,,,,,,,,238,154700
+2017-2018,1/7/2017,82767,Not parallel park in direction of travel,ROAD RULES 2014,208(1),183,,,,,,,,,,,,,Y,,,,866,158478
+2017-2018,1/7/2017,83026,P1 driver exceed 90 km/h - over 20 km/h - Lidar,ROAD RULES 2014,20,462,,,,,,EXCEED SPEED OVER 20KM/H,Y,,,,,,,,,,64,29568
+2017-2018,1/7/2017,82631,Rider not wear approved bicycle helmet/fitted/fastened,ROAD RULES 2014,256(1),330,,,,,,,,,,,,,,,,Y,415,136950
+2017-2018,1/8/2017,82700,Disobey no entry sign-motor vehicle,ROAD RULES 2014,100,257,,,,,,,,,,,,,,,,,304,78128
+2017-2018,1/9/2017,32950,Motor vehicle exceed speed limit - over 10 km/h - Camera recorded - Corporation,ROAD RULES 2014,20,1345,Y,Fixed Digital Speed Camera,9616,M1 PACIFIC MOTORWAY BAR POINT NORTHBOUND,,EXCEED SPEED OVER 10KM/H,Y,,,Y,,,,,,,5,6725
+2017-2018,1/9/2017,83524,Overtake to left of vehicle,ROAD RULES 2014,141(1),183,,,,,,,,,,,,,,,,,46,8418
+2017-2018,1/10/2017,83509,Drive motor vehicle not carry licence,ROAD RULES 2014,300-5,110,,,,,,,,,,,,,,,,,1179,129690
+2017-2018,1/11/2017,79220,Negligent driving (no death or grievous bodily harm),ROAD TRANSPORT ACT 2013,117(1)(c),439,,,,,,,,,,,,,,,,,191,83849
