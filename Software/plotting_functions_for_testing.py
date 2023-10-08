@@ -2,7 +2,6 @@ import pandas as pd
 from datetime import datetime
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
-from error_box import *
 import wx
 
 
@@ -33,16 +32,20 @@ def filter_by_period(df, from_date, to_date):
         e = "Time data is not a date object."
         return e
     
+# def convert_wx_to_pd(date):
+#     from_wx_date = date.GetValue()
+#     from_date_datetime = datetime.fromtimestamp(from_wx_date.GetTicks())
+#     from_date_datetime = datetime.fromtimestamp(from_wx_date.GetTicks())
+#     from_date_strf = from_date_datetime.strftime('%d/%m/%Y')
+#     date = datetime.strptime(from_date_strf, '%d/%m/%Y')
+#     return date
+
 def convert_wx_to_pd(date):
-    from_wx_date = date.GetValue()
-    from_date_datetime = datetime.fromtimestamp(from_wx_date.GetTicks())
+    from_date_datetime = datetime.fromtimestamp(date.GetTicks())
+    # from_date_datetime = datetime.fromtimestamp(from_date_datetime.GetTicks())
     from_date_strf = from_date_datetime.strftime('%d/%m/%Y')
     date = datetime.strptime(from_date_strf, '%d/%m/%Y')
-
     return date
-    
-        
-
 
 def plot_data_line(df, selected_offence_code=None):
     if df.empty:

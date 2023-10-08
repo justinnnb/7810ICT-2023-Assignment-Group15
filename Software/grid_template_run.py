@@ -24,7 +24,7 @@ class MainFrame(MainApp):
         super().__init__(parent)
 
         self.df = plotting_functions.read_data(filename)
-        print(self.df)
+        # print(self.df)
         if isinstance(self.df, str): 
             # Create the error dialog
             error_dlg = errorDialog(None)

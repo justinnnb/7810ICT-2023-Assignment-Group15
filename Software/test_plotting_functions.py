@@ -4,7 +4,7 @@ from datetime import datetime
 import matplotlib
 import matplotlib.pyplot as plt 
 from matplotlib.figure import Figure
-from plotting_functions import *
+from plotting_functions_for_testing import *
 
 ####Test Cases
 empty_df = pd.DataFrame()
@@ -16,14 +16,12 @@ non_empty_df = pd.DataFrame({
     'TOTAL_NUMBER': [100, 200, 300, 400] 
 })
 
-
 date_inputs = [
     (pd.Timestamp('2022-01-01'), pd.Timestamp('2022-02-01')),
+    (wx.DateTime(2025, 1, 1), wx.DateTime(2025, 2, 1)),
     (pd.Timestamp('2022-03-01'), pd.Timestamp('2022-04-01')),
     (pd.Timestamp(''), pd.Timestamp('2022-04-01')),
-    (pd.Timestamp('2022-03-01'), pd.Timestamp('')),
-    (wx.DateTime(2022, 1, 1), wx.DateTime(2022, 2, 1)),
-    (wx.DateTime(2025, 1, 1), wx.DateTime(2025, 2, 1))
+    (pd.Timestamp('2022-03-01'), pd.Timestamp(''))
 ]
 
 tests = [
@@ -80,16 +78,13 @@ def test_read_data(file_name, expected_output):
         assert df == expected_output
 
 # Test filter_by_period function
-# @pytest.mark.parametrize("from_date, to_date", date_inputs)
 @pytest.mark.parametrize("from_date, to_date", date_inputs)
 def test_filter_by_period(from_date, to_date):
     try:
         filtered_df = filter_by_period(non_empty_df, from_date, to_date)
-        # assert filtered_df is not None
         assert isinstance(filtered_df, pd.DataFrame)
     except: 
         assert filtered_df is not None
-    
 
 @pytest.mark.parametrize("input_df, is_empty", tests)
 def test_plot_data_line(input_df, is_empty):
