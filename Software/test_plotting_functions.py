@@ -59,14 +59,14 @@ df_camera_radar = pd.DataFrame({
     'CAMERA_TYPE': [1, None, None, None],
     'SPEED_CAMERA_IND': [None, None, 1, None]
 })
-##### TEST DATA END
-##### TEST DATA END
-##### TEST DATA END
-##### TEST DATA END
-##### TEST DATA END
 
-# Test read_data function
 file_inputs = [("test_data.csv", pd.DataFrame), ("file_not_exist.csv", "File not found or wrong file type."), ("wrong_format.json", "File not found or wrong file type.")]
+
+##### TEST DATA END
+##### TEST DATA END
+##### TEST DATA END
+##### TEST DATA END
+##### TEST DATA END
 
 # Test for read_data
 @pytest.mark.parametrize("file_name, expected_output", file_inputs)
