@@ -13,7 +13,6 @@ def read_data(file_name):
                         'TOTAL_NUMBER', 'TOTAL_VALUE']
         df = pd.read_csv(file_name, usecols=cols_name)
         df['OFFENCE_MONTH'] = pd.to_datetime(df['OFFENCE_MONTH'], format='%m/%d/%Y')
-        print(df['OFFENCE_DESC'])
 
         return df
     except Exception as e:
@@ -64,7 +63,6 @@ def plot_data_line(df, selected_offence_code=None):
 
         # Line plot
         fig, ax = plt.subplots(figsize=(10, 5))
-        # print(df['OFFENCE_DESC'])
         ax.plot(x, y, 'ro-.', label=f"{selected_offence_code}: {df['OFFENCE_DESC'].iloc[1]}")  # Use the first description as the label
         ax.set_title(f"Data for: {selected_offence_code}")
         ax.set_xlabel('Day/Month/Year')
