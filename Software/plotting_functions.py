@@ -37,7 +37,6 @@ def convert_wx_to_pd(date):
     from_date_datetime = datetime.fromtimestamp(from_wx_date.GetTicks())
     from_date_strf = from_date_datetime.strftime('%d/%m/%Y')
     date = datetime.strptime(from_date_strf, '%d/%m/%Y')
-
     return date
     
         
